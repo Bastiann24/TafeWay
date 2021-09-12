@@ -1,1 +1,2 @@
-# TafeWay is an app being developes by Software Development students.
+# TafeWay
+It's an app being developed by Software Development students.

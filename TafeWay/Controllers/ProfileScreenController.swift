@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class ProfileScreenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

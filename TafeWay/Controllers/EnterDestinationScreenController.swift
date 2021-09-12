@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class EnterDestinationScreenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

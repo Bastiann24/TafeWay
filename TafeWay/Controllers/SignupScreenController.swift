@@ -1,5 +1,5 @@
 //
-//  FifthViewController.swift
+//  ThirdViewController.swift
 //  TafeWay
 //
 //  Created by Bastian Ugalde  on 7/9/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FifthViewController: UIViewController {
+class SignupScreenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  FifthViewController.swift
 //  TafeWay
 //
 //  Created by Bastian Ugalde  on 7/9/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class EditProfileScreenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

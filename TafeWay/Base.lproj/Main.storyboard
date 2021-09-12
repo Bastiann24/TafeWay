@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Second View Controller-->
+        <!--Enter Destination Screen Controller-->
         <scene sceneID="YFr-uU-oFb">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="qT4-5o-vr2" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="qT4-5o-vr2" customClass="EnterDestinationScreenController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="08H-O6-Goj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="827.536231884058" y="93.75"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Signup Screen Controller-->
         <scene sceneID="KRy-Yb-jTO">
             <objects>
-                <viewController id="a24-WW-aaq" customClass="ThirdViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a24-WW-aaq" customClass="SignupScreenController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nin-F6-SgI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1644.9275362318842" y="93.75"/>
         </scene>
-        <!--Fourth View Controller-->
+        <!--Profile Screen Controller-->
         <scene sceneID="K0T-0e-gg0">
             <objects>
-                <viewController id="aUW-Pu-8T1" customClass="FourthViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aUW-Pu-8T1" customClass="ProfileScreenController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cLc-Ch-T4S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="2430.434782608696" y="93.75"/>
         </scene>
-        <!--Fifth View Controller-->
+        <!--Edit Profile Screen Controller-->
         <scene sceneID="iPL-NK-Yqy">
             <objects>
-                <viewController id="kLJ-q6-Srv" customClass="FifthViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kLJ-q6-Srv" customClass="EditProfileScreenController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qE7-Ad-aUn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,10 +302,10 @@
             </objects>
             <point key="canvasLocation" x="3276.811594202899" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Screen Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginScreenController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

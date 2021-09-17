@@ -16,7 +16,7 @@
         <!--Enter Destination Screen Controller-->
         <scene sceneID="YFr-uU-oFb">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="qT4-5o-vr2" customClass="EnterDestinationScreenController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="qT4-5o-vr2" customClass="EnterDestinationScreenController" customModule="TafeWay" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="08H-O6-Goj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                 <rect key="frame" x="344" y="44" width="50" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Profile Button" image="Profile Icon"/>
+                                <connections>
+                                    <segue destination="aUW-Pu-8T1" kind="presentation" modalPresentationStyle="fullScreen" id="3cv-2d-mkW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0XZ-kQ-845"/>
@@ -64,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI0-F2-Wrw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827.536231884058" y="93.75"/>
+            <point key="canvasLocation" x="920" y="-182"/>
         </scene>
         <!--Signup Screen Controller-->
         <scene sceneID="KRy-Yb-jTO">
@@ -159,10 +162,11 @@
                         <viewLayoutGuide key="safeArea" id="d0p-rC-fQd"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6tY-Wy-OgM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8w-Cy-PIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644.9275362318842" y="93.75"/>
+            <point key="canvasLocation" x="920" y="571"/>
         </scene>
         <!--Profile Screen Controller-->
         <scene sceneID="K0T-0e-gg0">
@@ -181,6 +185,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="EDIT MY DETAILS"/>
+                                <connections>
+                                    <segue destination="kLJ-q6-Srv" kind="presentation" modalPresentationStyle="fullScreen" id="yLq-m4-1xN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username will be here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN8-dc-v0g">
                                 <rect key="frame" x="99" y="299" width="219" height="36"/>
@@ -219,10 +226,11 @@
                         <viewLayoutGuide key="safeArea" id="YIW-BC-1VK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZBM-sY-cp0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IE5-bG-dbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2430.434782608696" y="93.75"/>
+            <point key="canvasLocation" x="1925" y="-182"/>
         </scene>
         <!--Edit Profile Screen Controller-->
         <scene sceneID="iPL-NK-Yqy">
@@ -297,15 +305,16 @@
                         <viewLayoutGuide key="safeArea" id="tEz-XN-Cmb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rrb-bM-fAz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8v-MM-5kM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276.811594202899" y="93.75"/>
+            <point key="canvasLocation" x="2864" y="-182"/>
         </scene>
         <!--Login Screen Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginScreenController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginScreenController" customModule="TafeWay" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,6 +367,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a24-WW-aaq" kind="presentation" modalPresentationStyle="fullScreen" id="NVY-0M-cR0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-t3-LFo">
                                 <rect key="frame" x="133" y="823" width="153" height="30"/>

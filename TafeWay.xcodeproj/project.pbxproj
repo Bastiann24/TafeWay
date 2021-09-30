@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481293C026E7265100193C5E /* SignupScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481293BF26E7265100193C5E /* SignupScreenController.swift */; };
-		481293C226E72ABA00193C5E /* ProfileScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481293C126E72ABA00193C5E /* ProfileScreenController.swift */; };
-		481293C426E72D4000193C5E /* EditProfileScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481293C326E72D4000193C5E /* EditProfileScreenController.swift */; };
 		48C262DC26C563F5003AF51A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C262DB26C563F5003AF51A /* AppDelegate.swift */; };
 		48C262DE26C563F5003AF51A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C262DD26C563F5003AF51A /* SceneDelegate.swift */; };
-		48C262E026C563F5003AF51A /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C262DF26C563F5003AF51A /* LoginScreenController.swift */; };
 		48C262E326C563F5003AF51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C262E126C563F5003AF51A /* Main.storyboard */; };
 		48C262E526C563F9003AF51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C262E426C563F9003AF51A /* Assets.xcassets */; };
 		48C262E826C563F9003AF51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C262E626C563F9003AF51A /* LaunchScreen.storyboard */; };
@@ -21,13 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		481293BF26E7265100193C5E /* SignupScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenController.swift; sourceTree = "<group>"; };
-		481293C126E72ABA00193C5E /* ProfileScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenController.swift; sourceTree = "<group>"; };
-		481293C326E72D4000193C5E /* EditProfileScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileScreenController.swift; sourceTree = "<group>"; };
 		48C262D826C563F5003AF51A /* TafeWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TafeWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C262DB26C563F5003AF51A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C262DD26C563F5003AF51A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48C262DF26C563F5003AF51A /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		48C262E226C563F5003AF51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C262E426C563F9003AF51A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C262E726C563F9003AF51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,11 +81,7 @@
 		48D3586F26EDFCD000CDE398 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				481293C326E72D4000193C5E /* EditProfileScreenController.swift */,
-				481293C126E72ABA00193C5E /* ProfileScreenController.swift */,
-				481293BF26E7265100193C5E /* SignupScreenController.swift */,
 				48C2630126C61384003AF51A /* EnterDestinationScreenController.swift */,
-				48C262DF26C563F5003AF51A /* LoginScreenController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,13 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481293C226E72ABA00193C5E /* ProfileScreenController.swift in Sources */,
 				48C2630226C61384003AF51A /* EnterDestinationScreenController.swift in Sources */,
-				48C262E026C563F5003AF51A /* LoginScreenController.swift in Sources */,
-				481293C026E7265100193C5E /* SignupScreenController.swift in Sources */,
 				48C262DC26C563F5003AF51A /* AppDelegate.swift in Sources */,
 				48C262DE26C563F5003AF51A /* SceneDelegate.swift in Sources */,
-				481293C426E72D4000193C5E /* EditProfileScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

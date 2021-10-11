@@ -15,6 +15,8 @@
 		48C262E826C563F9003AF51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C262E626C563F9003AF51A /* LaunchScreen.storyboard */; };
 		48C262F726C5FBFC003AF51A /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48C262F626C5F9C5003AF51A /* Lato-Black.ttf */; };
 		48C2630226C61384003AF51A /* EnterDestinationScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2630126C61384003AF51A /* EnterDestinationScreenController.swift */; };
+		9ECCF42A2714100B00034B87 /* GetStartedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECCF4292714100B00034B87 /* GetStartedScreenViewController.swift */; };
+		9ECCF42C2714103900034B87 /* InfoDirectionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECCF42B2714103900034B87 /* InfoDirectionScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		48C262E926C563F9003AF51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C262F626C5F9C5003AF51A /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		48C2630126C61384003AF51A /* EnterDestinationScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDestinationScreenController.swift; sourceTree = "<group>"; };
+		9ECCF4292714100B00034B87 /* GetStartedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedScreenViewController.swift; sourceTree = "<group>"; };
+		9ECCF42B2714103900034B87 /* InfoDirectionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDirectionScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				48C2630126C61384003AF51A /* EnterDestinationScreenController.swift */,
 				48A33E2D2705E0A1009F9EFB /* ShowingDirectionViewController.swift */,
+				9ECCF4292714100B00034B87 /* GetStartedScreenViewController.swift */,
+				9ECCF42B2714103900034B87 /* InfoDirectionScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECCF42A2714100B00034B87 /* GetStartedScreenViewController.swift in Sources */,
 				48C2630226C61384003AF51A /* EnterDestinationScreenController.swift in Sources */,
+				9ECCF42C2714103900034B87 /* InfoDirectionScreenViewController.swift in Sources */,
 				48C262DC26C563F5003AF51A /* AppDelegate.swift in Sources */,
 				48A33E2E2705E0A1009F9EFB /* ShowingDirectionViewController.swift in Sources */,
 				48C262DE26C563F5003AF51A /* SceneDelegate.swift in Sources */,

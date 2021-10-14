@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1729" y="-180"/>
         </scene>
-        <!--View Controller-->
+        <!--Get Started Screen View Controller-->
         <scene sceneID="LFJ-Gv-xTP">
             <objects>
-                <viewController id="LnA-hP-cG3" sceneMemberID="viewController">
+                <viewController id="LnA-hP-cG3" customClass="GetStartedScreenViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bSo-tL-Se6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="-423.1884057971015" y="-180.13392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Info Direction Screen View Controller-->
         <scene sceneID="zlM-2c-aqv">
             <objects>
-                <viewController id="pvM-wn-8kX" sceneMemberID="viewController">
+                <viewController id="pvM-wn-8kX" customClass="InfoDirectionScreenViewController" customModule="TafeWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVK-Zc-N0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

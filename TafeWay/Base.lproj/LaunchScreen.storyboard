@@ -5,14 +5,8 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Lato-Black.ttf">
-            <string>Lato-Black</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Demo Page View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -22,92 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-OG-wZ5">
-                                <rect key="frame" x="-31" y="20" width="476" height="856"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-OG-wZ5">
+                                <rect key="frame" x="-333" y="20" width="1080" height="856"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHB-E0-DuN">
-                                <rect key="frame" x="93" y="387" width="266" height="45"/>
-                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="25"/>
-                                <state key="normal" title="Find your classes on time">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w20-Wz-qoK">
-                                <rect key="frame" x="104" y="301" width="204" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="HCM-ou-WCH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="25"/>
-                                <state key="normal" title="FULL CONTROL">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-10-EKy">
-                                <rect key="frame" x="-10" y="109" width="455" height="212"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-10-EKy">
+                                <rect key="frame" x="52" y="361" width="311" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-um-Pvu">
-                                <rect key="frame" x="0.0" y="452" width="414" height="398"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="94y-VZ-5Bp">
-                                    <size key="itemSize" width="410" height="412"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xXb-rs-wbW">
-                                        <rect key="frame" x="2" y="0.0" width="410" height="412"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qzD-kJ-00a">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="412"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4xV-lM-imD">
-                                                    <rect key="frame" x="24" y="-24" width="360" height="447"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="410" height="412"/>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="01J-lp-oVM" id="ekG-Na-Oyf"/>
-                                    <outlet property="delegate" destination="01J-lp-oVM" id="gLd-xM-Ans"/>
-                                </connections>
-                            </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="38e-GW-iBd">
-                                <rect key="frame" x="136" y="822" width="142" height="28"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="b4c-OG-wZ5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1me-iA-CMw"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="3V4-7K-sau"/>
-                            <constraint firstItem="b4c-OG-wZ5" firstAttribute="trailing" secondItem="h0c-10-EKy" secondAttribute="trailing" id="3Wi-pB-SF1"/>
-                            <constraint firstItem="h0c-10-EKy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="5wg-I0-24y"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="bottom" secondItem="cRZ-um-Pvu" secondAttribute="bottom" id="8dD-aF-UuX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRZ-um-Pvu" secondAttribute="bottom" constant="12" id="ABP-P7-chR"/>
-                            <constraint firstItem="sHB-E0-DuN" firstAttribute="top" secondItem="w20-Wz-qoK" secondAttribute="bottom" constant="29" id="BiI-15-3FE"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="bottom" secondItem="cRZ-um-Pvu" secondAttribute="bottom" id="RAC-EK-hVJ"/>
-                            <constraint firstItem="h0c-10-EKy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-30" id="Tca-JC-RC0"/>
-                            <constraint firstItem="b4c-OG-wZ5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-24" id="TmQ-1g-2g6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sHB-E0-DuN" secondAttribute="trailing" constant="55" id="VNR-c0-HeV"/>
-                            <constraint firstItem="sHB-E0-DuN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Wgc-vm-7GG"/>
-                            <constraint firstItem="sHB-E0-DuN" firstAttribute="top" secondItem="h0c-10-EKy" secondAttribute="bottom" constant="66" id="Yhz-qY-pOz"/>
-                            <constraint firstItem="w20-Wz-qoK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="301" id="baf-6Y-j8a"/>
-                            <constraint firstItem="b4c-OG-wZ5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-51" id="efd-tq-0w4"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="centerX" secondItem="b4c-OG-wZ5" secondAttribute="centerX" id="f3H-Il-bkz"/>
-                            <constraint firstItem="cRZ-um-Pvu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="h2M-eO-GA4"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hgH-R0-WE8"/>
-                            <constraint firstItem="38e-GW-iBd" firstAttribute="centerX" secondItem="cRZ-um-Pvu" secondAttribute="centerX" id="jcx-0f-smt"/>
-                            <constraint firstItem="cRZ-um-Pvu" firstAttribute="top" secondItem="sHB-E0-DuN" secondAttribute="bottom" constant="20" id="lyS-7s-xlF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w20-Wz-qoK" secondAttribute="trailing" constant="106" id="pLj-4Q-CLv"/>
-                            <constraint firstItem="w20-Wz-qoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="xEO-GG-ex3"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

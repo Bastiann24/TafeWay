@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIR-Jn-c5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088" y="-202"/>
+            <point key="canvasLocation" x="2026" y="-180"/>
         </scene>
         <!--Get Started Screen View Controller-->
         <scene sceneID="LFJ-Gv-xTP">

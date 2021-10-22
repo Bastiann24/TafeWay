@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Make launch screen stays a bit longer
+        RunLoop.current.run(until: NSDate(timeIntervalSinceNow:1) as Date)
         copyDatabase()
         return true
     }

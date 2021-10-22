@@ -35,15 +35,8 @@
                                     <segue destination="LnA-hP-cG3" kind="presentation" modalPresentationStyle="fullScreen" id="Swu-7l-RtF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaE-15-qk3">
-                                <rect key="frame" x="152" y="601" width="110" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="15"/>
-                                <state key="normal" title="GET ME THERE!">
-                                    <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-8J-uW1">
-                                <rect key="frame" x="66" y="305" width="282" height="162"/>
+                            <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-8J-uW1">
+                                <rect key="frame" x="47" y="316" width="320" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="gwA-3o-f41"/>
                                 </constraints>
@@ -52,10 +45,17 @@
                                     <outlet property="delegate" destination="qT4-5o-vr2" id="DRM-NU-kfE"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR DESTINATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kF-aK-xdQ">
-                                <rect key="frame" x="66" y="215" width="282" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaE-15-qk3">
+                                <rect key="frame" x="127" y="596" width="161" height="39"/>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="22"/>
+                                <state key="normal" title="GET ME THERE!">
+                                    <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT DESTINATION AND ENTRANCE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kF-aK-xdQ">
+                                <rect key="frame" x="14" y="232" width="386" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="cyL-SA-cvY"/>
+                                    <constraint firstAttribute="height" constant="34" id="Alf-8E-mk2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -65,19 +65,18 @@
                         <viewLayoutGuide key="safeArea" id="0XZ-kQ-845"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2S0-8J-uW1" firstAttribute="top" secondItem="5kF-aK-xdQ" secondAttribute="bottom" constant="56" id="1w1-ty-OBX"/>
+                            <constraint firstItem="2S0-8J-uW1" firstAttribute="top" secondItem="5kF-aK-xdQ" secondAttribute="bottom" constant="50" id="4lh-ST-Bac"/>
                             <constraint firstItem="RTG-B6-CxH" firstAttribute="top" secondItem="08H-O6-Goj" secondAttribute="topMargin" constant="-44" id="6KZ-4z-Bo7"/>
-                            <constraint firstItem="0XZ-kQ-845" firstAttribute="bottom" secondItem="VaE-15-qk3" secondAttribute="bottom" constant="231" id="DUs-pL-8qn"/>
-                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="top" secondItem="08H-O6-Goj" secondAttribute="top" constant="215" id="Gbo-u9-oG8"/>
-                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="leading" secondItem="2S0-8J-uW1" secondAttribute="leading" id="OYl-v0-0ky"/>
+                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="centerX" secondItem="RTG-B6-CxH" secondAttribute="centerX" id="94Y-hr-vzW"/>
+                            <constraint firstItem="0XZ-kQ-845" firstAttribute="bottom" secondItem="VaE-15-qk3" secondAttribute="bottom" constant="227" id="DUs-pL-8qn"/>
+                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="centerX" secondItem="2S0-8J-uW1" secondAttribute="centerX" id="PJw-pW-Peq"/>
                             <constraint firstItem="7W8-10-te2" firstAttribute="top" secondItem="0XZ-kQ-845" secondAttribute="top" id="Qh4-uH-9Gs"/>
                             <constraint firstItem="RTG-B6-CxH" firstAttribute="leading" secondItem="0XZ-kQ-845" secondAttribute="leading" id="RJA-Qa-gMx"/>
-                            <constraint firstItem="RTG-B6-CxH" firstAttribute="centerX" secondItem="5kF-aK-xdQ" secondAttribute="centerX" id="g6F-xC-QLh"/>
-                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="leading" secondItem="0XZ-kQ-845" secondAttribute="leading" constant="66" id="gEh-1H-Bq5"/>
+                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="leading" secondItem="0XZ-kQ-845" secondAttribute="leading" constant="14" id="U2d-Cd-679"/>
+                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="top" secondItem="08H-O6-Goj" secondAttribute="top" constant="232" id="c7R-R3-3B8"/>
                             <constraint firstItem="RTG-B6-CxH" firstAttribute="centerX" secondItem="08H-O6-Goj" secondAttribute="centerX" id="hrt-ca-EQK"/>
                             <constraint firstItem="RTG-B6-CxH" firstAttribute="centerY" secondItem="08H-O6-Goj" secondAttribute="centerY" id="iQ2-2O-6VA"/>
-                            <constraint firstItem="5kF-aK-xdQ" firstAttribute="trailing" secondItem="2S0-8J-uW1" secondAttribute="trailing" id="pDB-j6-giJ"/>
-                            <constraint firstItem="2S0-8J-uW1" firstAttribute="centerX" secondItem="VaE-15-qk3" secondAttribute="centerX" id="yN5-Nc-sbh"/>
+                            <constraint firstItem="2S0-8J-uW1" firstAttribute="centerX" secondItem="VaE-15-qk3" secondAttribute="centerX" constant="-0.5" id="yN5-Nc-sbh"/>
                             <constraint firstItem="0XZ-kQ-845" firstAttribute="trailing" secondItem="7W8-10-te2" secondAttribute="trailing" constant="344" id="yO1-Hl-QtP"/>
                             <constraint firstItem="7W8-10-te2" firstAttribute="leading" secondItem="08H-O6-Goj" secondAttribute="leadingMargin" id="yXS-hv-zHx"/>
                         </constraints>
@@ -264,7 +263,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f0j-1W-5p9"/>
+        <segue reference="0Ir-iQ-sUn"/>
         <segue reference="Pgg-GV-cS6"/>
     </inferredMetricsTieBreakers>
     <resources>

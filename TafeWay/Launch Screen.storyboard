@@ -22,37 +22,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-kn-W46">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-kn-W46">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-gN-HjN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-gN-HjN">
                                 <rect key="frame" x="105" y="283" width="197" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="th5-9B-ynr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="25"/>
                                 <state key="normal" title="FULL CONTROL">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainDirection_page" translatesAutoresizingMaskIntoConstraints="NO" id="K3E-kM-cno">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainDirection_page" translatesAutoresizingMaskIntoConstraints="NO" id="K3E-kM-cno">
                                 <rect key="frame" x="-264" y="466" width="942" height="657"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="657" id="063-ec-aa5"/>
+                                    <constraint firstAttribute="width" constant="942" id="9qh-UD-a2j"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-iR-lHy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-iR-lHy">
                                 <rect key="frame" x="84" y="377" width="266" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="25"/>
                                 <state key="normal" title="Find your classes on time">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-s9-wcf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-s9-wcf">
                                 <rect key="frame" x="0.0" y="81" width="414" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QBf-PA-16n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K3E-kM-cno" firstAttribute="top" secondItem="qxI-iR-lHy" secondAttribute="bottom" constant="44" id="1zd-Tz-lUm"/>
+                            <constraint firstItem="yPR-s9-wcf" firstAttribute="centerX" secondItem="K3E-kM-cno" secondAttribute="centerX" id="5ap-DB-j4T"/>
+                            <constraint firstItem="QXT-kn-W46" firstAttribute="leading" secondItem="z7X-Ew-Eie" secondAttribute="leading" id="EC9-un-BSj"/>
+                            <constraint firstItem="SRf-gN-HjN" firstAttribute="leading" secondItem="QBf-PA-16n" secondAttribute="leading" constant="105" id="NWu-b3-lAa"/>
+                            <constraint firstItem="QXT-kn-W46" firstAttribute="leading" secondItem="yPR-s9-wcf" secondAttribute="leading" id="Tbh-Qz-hFW"/>
+                            <constraint firstItem="QXT-kn-W46" firstAttribute="trailing" secondItem="yPR-s9-wcf" secondAttribute="trailing" id="WOp-Jt-5em"/>
+                            <constraint firstItem="QBf-PA-16n" firstAttribute="trailing" secondItem="SRf-gN-HjN" secondAttribute="trailing" constant="112" id="XrK-R7-hly"/>
+                            <constraint firstItem="SRf-gN-HjN" firstAttribute="top" secondItem="QBf-PA-16n" secondAttribute="top" constant="239" id="ZFL-DE-Mqy"/>
+                            <constraint firstItem="qxI-iR-lHy" firstAttribute="top" secondItem="yPR-s9-wcf" secondAttribute="bottom" constant="84" id="aBV-aR-eo3"/>
+                            <constraint firstItem="QXT-kn-W46" firstAttribute="top" secondItem="z7X-Ew-Eie" secondAttribute="top" id="hde-IS-s5p"/>
+                            <constraint firstItem="yPR-s9-wcf" firstAttribute="top" secondItem="QBf-PA-16n" secondAttribute="top" constant="37" id="qTK-Jx-oJn"/>
+                            <constraint firstItem="qxI-iR-lHy" firstAttribute="top" secondItem="SRf-gN-HjN" secondAttribute="bottom" constant="37" id="uz4-fS-tMf"/>
+                            <constraint firstItem="qxI-iR-lHy" firstAttribute="leading" secondItem="QBf-PA-16n" secondAttribute="leading" constant="84" id="vcl-jH-h4Z"/>
+                            <constraint firstAttribute="bottom" secondItem="QXT-kn-W46" secondAttribute="bottom" id="xDi-HB-jab"/>
+                            <constraint firstAttribute="trailing" secondItem="QXT-kn-W46" secondAttribute="trailing" id="xYE-6G-0DS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMp-v8-kQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //Make launch screen stays a bit longer
         RunLoop.current.run(until: NSDate(timeIntervalSinceNow:1) as Date)
+        //Databse function
         copyDatabase()
         return true
     }

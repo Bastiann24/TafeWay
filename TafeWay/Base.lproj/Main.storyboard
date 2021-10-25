@@ -51,6 +51,9 @@
                                 <state key="normal" title="GET ME THERE!">
                                     <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Wvr-7J-MkY" kind="presentation" modalPresentationStyle="fullScreen" id="f1j-W6-8ry"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT DESTINATION AND ENTRANCE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kF-aK-xdQ">
                                 <rect key="frame" x="14" y="232" width="386" height="34"/>
@@ -118,38 +121,37 @@
                                     <segue destination="qT4-5o-vr2" kind="presentation" modalPresentationStyle="fullScreen" id="Pgg-GV-cS6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIDEO WILL BE HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsi-vL-13Z">
-                                <rect key="frame" x="98" y="374" width="218" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="buL-F7-vUg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yo-Sc-wX0">
+                                <rect key="frame" x="20" y="165" width="374" height="498"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TM4-dZ-wiL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8yo-Sc-wX0" firstAttribute="top" secondItem="Gd3-uh-aVE" secondAttribute="bottom" constant="60" id="3cG-0l-dFX"/>
+                            <constraint firstItem="8yo-Sc-wX0" firstAttribute="leading" secondItem="Gd3-uh-aVE" secondAttribute="leading" id="3nr-rB-lyC"/>
                             <constraint firstItem="TM4-dZ-wiL" firstAttribute="bottom" secondItem="jli-7P-TMT" secondAttribute="bottom" constant="17" id="8VF-AC-XOk"/>
                             <constraint firstItem="Gd3-uh-aVE" firstAttribute="leading" secondItem="LEX-Ub-J8k" secondAttribute="leadingMargin" id="Anv-Sa-Jwm"/>
                             <constraint firstItem="nZG-UV-pdZ" firstAttribute="leading" secondItem="TM4-dZ-wiL" secondAttribute="leading" id="CLp-Wm-KJ8"/>
                             <constraint firstItem="nZG-UV-pdZ" firstAttribute="centerX" secondItem="LEX-Ub-J8k" secondAttribute="centerX" id="GQQ-2E-3ca"/>
-                            <constraint firstItem="Jsi-vL-13Z" firstAttribute="leading" secondItem="TM4-dZ-wiL" secondAttribute="leading" constant="98" id="IMM-6Z-Ksu"/>
                             <constraint firstItem="jli-7P-TMT" firstAttribute="leading" secondItem="TM4-dZ-wiL" secondAttribute="leading" constant="179" id="Jdg-76-MQV"/>
                             <constraint firstItem="nZG-UV-pdZ" firstAttribute="centerY" secondItem="LEX-Ub-J8k" secondAttribute="centerY" id="NBe-uz-6dh"/>
                             <constraint firstItem="TM4-dZ-wiL" firstAttribute="trailing" secondItem="Gd3-uh-aVE" secondAttribute="trailing" constant="344" id="T8k-Jk-JPo"/>
-                            <constraint firstItem="Jsi-vL-13Z" firstAttribute="top" secondItem="TM4-dZ-wiL" secondAttribute="top" constant="330" id="WzQ-V1-RqW"/>
+                            <constraint firstAttribute="bottom" secondItem="8yo-Sc-wX0" secondAttribute="bottom" constant="233" id="W4z-us-mgE"/>
                             <constraint firstItem="nZG-UV-pdZ" firstAttribute="top" secondItem="LEX-Ub-J8k" secondAttribute="topMargin" constant="-44" id="drY-xm-aSu"/>
-                            <constraint firstItem="nZG-UV-pdZ" firstAttribute="centerX" secondItem="Jsi-vL-13Z" secondAttribute="centerX" id="guV-Bx-Vvs"/>
+                            <constraint firstItem="8yo-Sc-wX0" firstAttribute="centerX" secondItem="nZG-UV-pdZ" secondAttribute="centerX" id="rDJ-WE-elu"/>
                             <constraint firstItem="TM4-dZ-wiL" firstAttribute="bottom" secondItem="Gd3-uh-aVE" secondAttribute="bottom" constant="757" id="xYO-np-hri"/>
                             <constraint firstItem="Gd3-uh-aVE" firstAttribute="top" secondItem="TM4-dZ-wiL" secondAttribute="top" id="zsW-GV-hlg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoView" destination="8yo-Sc-wX0" id="GJl-wR-4eC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIR-Jn-c5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="-180"/>
+            <point key="canvasLocation" x="1289.8550724637682" y="-180.13392857142856"/>
         </scene>
         <!--Get Started Screen View Controller-->
         <scene sceneID="LFJ-Gv-xTP">
@@ -263,7 +265,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0Ir-iQ-sUn"/>
+        <segue reference="f1j-W6-8ry"/>
         <segue reference="Pgg-GV-cS6"/>
     </inferredMetricsTieBreakers>
     <resources>

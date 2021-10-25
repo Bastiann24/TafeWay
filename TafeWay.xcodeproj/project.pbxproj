@@ -11,6 +11,7 @@
 		4820B0CD272106740071537B /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820B0CC272106740071537B /* Entrance.swift */; };
 		4820B0D127222B840071537B /* TafeWayDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0D027222B840071537B /* TafeWayDB.db */; };
 		4820B0D4272648990071537B /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0D3272648990071537B /* sample.mp4 */; };
+		4820B0D6272670ED0071537B /* sample2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820B0D5272670ED0071537B /* sample2.mp4 */; };
 		48A33E2E2705E0A1009F9EFB /* ShowingDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A33E2D2705E0A1009F9EFB /* ShowingDirectionViewController.swift */; };
 		48C262DC26C563F5003AF51A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C262DB26C563F5003AF51A /* AppDelegate.swift */; };
 		48C262DE26C563F5003AF51A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C262DD26C563F5003AF51A /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 		4820B0CC272106740071537B /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		4820B0D027222B840071537B /* TafeWayDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = TafeWayDB.db; sourceTree = "<group>"; };
 		4820B0D3272648990071537B /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		4820B0D5272670ED0071537B /* sample2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample2.mp4; sourceTree = "<group>"; };
 		48A33E2D2705E0A1009F9EFB /* ShowingDirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingDirectionViewController.swift; sourceTree = "<group>"; };
 		48C262D826C563F5003AF51A /* TafeWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TafeWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C262DB26C563F5003AF51A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4820B0D3272648990071537B /* sample.mp4 */,
+				4820B0D5272670ED0071537B /* sample2.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4820B0D6272670ED0071537B /* sample2.mp4 in Resources */,
 				48C262F726C5FBFC003AF51A /* Lato-Black.ttf in Resources */,
 				4820B0D4272648990071537B /* sample.mp4 in Resources */,
 				4820B0D127222B840071537B /* TafeWayDB.db in Resources */,

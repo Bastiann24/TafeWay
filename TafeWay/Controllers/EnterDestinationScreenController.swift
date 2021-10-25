@@ -10,6 +10,23 @@ import SQLite3
 
 class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    // Prepare segue to pass data to ShowingDirectionViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Get a reference to the view controller data is being passed to
+        let ShowingDirectionViewController = segue.destination as! ShowingDirectionViewController
+        
+        // Set a variable in the view controller with the String to pass
+        ShowingDirectionViewController.area = areaPassed!
+        ShowingDirectionViewController.entrance = entrancePassed!
+    }
+    // Variable that will be passed to the view controller to display the correct video
+    var areaPassed: String?
+    // Variable that will be passed to the view controller to display the correct video
+    var entrancePassed: String?
+    
+
     //Outlet for picker view
     @IBOutlet weak var areaPickerView: UIPickerView!
     
@@ -22,7 +39,7 @@ class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, 
     //Area names array for picker view display
     var areaNames = [String]()
     // Entrance names array for picker view display
-    var entranceNames = [String] ()
+    var entranceNames = [String]()
     
     
     //Functions for database get path for DB
@@ -88,7 +105,7 @@ class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, 
         return 2
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
-        if (component==0) {
+        if (component == 0) {
         return areaArray.count
         }
         else
@@ -103,14 +120,18 @@ class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, 
         else{
             return entranceNames[row] as String
         }
+        
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
         if (component == 0){
-        print(areaArray[row])
+        print(areaNames[row])
+        areaPassed = areaNames[row]
         }
         else{
-            print(entranceArray[row])
+            print(entranceNames[row])
+            entrancePassed = entranceNames[row]
         }
+
     }
     //Function for pickerview to modify the size of the text
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

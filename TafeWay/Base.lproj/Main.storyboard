@@ -52,7 +52,7 @@
                                     <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wvr-7J-MkY" kind="presentation" modalPresentationStyle="fullScreen" id="f1j-W6-8ry"/>
+                                    <segue destination="Wvr-7J-MkY" kind="presentation" identifier="playerSegue" modalPresentationStyle="fullScreen" id="brZ-tB-TBb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT DESTINATION AND ENTRANCE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kF-aK-xdQ">
@@ -145,6 +145,7 @@
                             <constraint firstItem="Gd3-uh-aVE" firstAttribute="top" secondItem="TM4-dZ-wiL" secondAttribute="top" id="zsW-GV-hlg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Cqk-EI-A4u"/>
                     <connections>
                         <outlet property="videoView" destination="8yo-Sc-wX0" id="GJl-wR-4eC"/>
                     </connections>
@@ -265,7 +266,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f1j-W6-8ry"/>
+        <segue reference="brZ-tB-TBb"/>
         <segue reference="Pgg-GV-cS6"/>
     </inferredMetricsTieBreakers>
     <resources>

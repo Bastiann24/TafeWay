@@ -172,5 +172,9 @@ class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, 
         for entrance in entranceArray{
             entranceNames.append(entrance.entranceName)
         }
+        // Calling didselectrow method to avoid picker view crashing when first row is selected when starting the controller.
+        self.pickerView(areaPickerView, didSelectRow: 0, inComponent: 0)
+        self.pickerView(areaPickerView, didSelectRow: 0, inComponent: 1)
+        
     }
 }

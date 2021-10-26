@@ -20,7 +20,7 @@ class InfoDirectionScreenViewController: UIViewController {
             displayTextLabel.text = "Sector B contains classroom B.B01, B.B02, B.B03 and B.B04"
         }
         if (areaToDisplayInfo == "BASEMENT - Sector D"){
-            displayTextLabel.text = "Sector D contains classroom D.B01, D.B02, D.B03, D.B04, D.B05, D.B06, D.B07, D.B08 and there is a toilter in between classrooms D.B06 and D.B07 "
+            displayTextLabel.text = "Sector D contains classroom D.B01, D.B02, D.B03, D.B04, D.B05, D.B06, D.B07, D.B08 and there is a toilet in between classrooms D.B06 and D.B07 "
         }
         
     }

@@ -13,8 +13,30 @@ class ShowingDirectionViewController: UIViewController {
     //Variables that are stroring data passed from EnterDestinationScreenController
     public var area  = ""
     public var entrance = ""
-
     
+    // Prepare segue to pass data to InfoDirectionScreenViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infoSegue"{
+            // Get a reference to the view controller data is being passed to
+            let InfoDirectionScreenViewController = segue.destination as! InfoDirectionScreenViewController
+            
+            // Variable that will pass the area to the InfoDirectionScreenViewController
+            var areaToDisplayInfoInViewController : String?
+            
+            // Handling code to pass the correct area
+            if (area == "BASEMENT - Sector B"){
+                areaToDisplayInfoInViewController = "BASEMENT - Sector B"
+            }
+            else if (area == "BASEMENT - Sector D"){
+                areaToDisplayInfoInViewController = "BASEMENT - Sector D"
+            }
+            
+            // Set a variable in the view controller with the String to pass
+            InfoDirectionScreenViewController.areaToDisplayInfo = areaToDisplayInfoInViewController!
+        }
+    }
+
+    //Outlet for the view
     @IBOutlet weak var videoView: UIView!
     //Set player
     var player: AVPlayer!

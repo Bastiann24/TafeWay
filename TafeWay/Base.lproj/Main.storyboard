@@ -32,7 +32,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="Go back button"/>
                                 <connections>
-                                    <segue destination="LnA-hP-cG3" kind="presentation" modalPresentationStyle="fullScreen" id="Swu-7l-RtF"/>
+                                    <segue destination="LnA-hP-cG3" kind="presentation" identifier="backToGetStartedPage" modalPresentationStyle="fullScreen" id="Swu-7l-RtF"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-8J-uW1">
@@ -111,7 +111,7 @@
                                     <color key="titleColor" red="0.90995568039999997" green="0.33044204119999998" blue="0.3097692728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pvM-wn-8kX" kind="presentation" modalPresentationStyle="fullScreen" id="0Ir-iQ-sUn"/>
+                                    <segue destination="pvM-wn-8kX" kind="presentation" identifier="infoSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0Ir-iQ-sUn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-uh-aVE">
@@ -218,11 +218,11 @@
                                 <rect key="frame" x="20" y="44" width="50" height="61"/>
                                 <state key="normal" title="Button" image="Go back button"/>
                                 <connections>
-                                    <segue destination="Wvr-7J-MkY" kind="presentation" modalPresentationStyle="fullScreen" id="f0j-1W-5p9"/>
+                                    <segue destination="Wvr-7J-MkY" kind="presentation" modalPresentationStyle="fullScreen" id="Zc9-01-7sb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-ni-DfO">
-                                <rect key="frame" x="180" y="170" width="54" height="34"/>
+                                <rect key="frame" x="180" y="170" width="51.5" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="GNz-za-lao"/>
                                 </constraints>
@@ -230,12 +230,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMPORTANT NOTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCz-Em-eM6">
-                                <rect key="frame" x="108" y="447" width="198" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="O8v-zR-k8F"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q6-Qr-Poi">
+                                <rect key="frame" x="20" y="237" width="374" height="625"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -245,20 +242,24 @@
                         <constraints>
                             <constraint firstItem="7vS-Xi-mav" firstAttribute="centerX" secondItem="aVK-Zc-N0Z" secondAttribute="centerX" id="023-i6-S9K"/>
                             <constraint firstItem="NkJ-DL-QhN" firstAttribute="top" secondItem="0eb-Qc-89z" secondAttribute="top" id="6Wp-0Y-NrM"/>
-                            <constraint firstItem="7vS-Xi-mav" firstAttribute="centerX" secondItem="sCz-Em-eM6" secondAttribute="centerX" id="Gh5-dZ-vM5"/>
+                            <constraint firstItem="9q6-Qr-Poi" firstAttribute="leading" secondItem="NkJ-DL-QhN" secondAttribute="leading" id="AED-pJ-pQh"/>
+                            <constraint firstItem="9q6-Qr-Poi" firstAttribute="top" secondItem="ezI-ni-DfO" secondAttribute="bottom" constant="33" id="KLW-lh-D9u"/>
                             <constraint firstItem="NkJ-DL-QhN" firstAttribute="leading" secondItem="aVK-Zc-N0Z" secondAttribute="leadingMargin" id="MNQ-q6-77N"/>
                             <constraint firstItem="ezI-ni-DfO" firstAttribute="top" secondItem="0eb-Qc-89z" secondAttribute="top" constant="126" id="MVA-p4-lih"/>
                             <constraint firstItem="7vS-Xi-mav" firstAttribute="top" secondItem="aVK-Zc-N0Z" secondAttribute="topMargin" constant="-44" id="NGe-xl-1Lk"/>
                             <constraint firstItem="7vS-Xi-mav" firstAttribute="leading" secondItem="0eb-Qc-89z" secondAttribute="leading" id="R3s-v9-iGt"/>
-                            <constraint firstItem="0eb-Qc-89z" firstAttribute="bottom" secondItem="sCz-Em-eM6" secondAttribute="bottom" constant="381" id="Wg7-oV-MLN"/>
-                            <constraint firstItem="ezI-ni-DfO" firstAttribute="centerX" secondItem="sCz-Em-eM6" secondAttribute="centerX" id="feh-qD-OSM"/>
-                            <constraint firstItem="sCz-Em-eM6" firstAttribute="leading" secondItem="0eb-Qc-89z" secondAttribute="leading" constant="108" id="g7Y-K4-m5N"/>
+                            <constraint firstItem="9q6-Qr-Poi" firstAttribute="bottom" secondItem="0eb-Qc-89z" secondAttribute="bottom" id="Um9-EX-r36"/>
+                            <constraint firstItem="9q6-Qr-Poi" firstAttribute="centerX" secondItem="7vS-Xi-mav" secondAttribute="centerX" id="ioS-fr-1Pj"/>
                             <constraint firstItem="0eb-Qc-89z" firstAttribute="trailing" secondItem="NkJ-DL-QhN" secondAttribute="trailing" constant="344" id="nwv-Ae-ahQ"/>
                             <constraint firstItem="0eb-Qc-89z" firstAttribute="bottom" secondItem="NkJ-DL-QhN" secondAttribute="bottom" constant="757" id="sEy-T5-Fgj"/>
                             <constraint firstItem="ezI-ni-DfO" firstAttribute="leading" secondItem="0eb-Qc-89z" secondAttribute="leading" constant="180" id="sM5-xi-0o2"/>
                             <constraint firstItem="7vS-Xi-mav" firstAttribute="centerY" secondItem="aVK-Zc-N0Z" secondAttribute="centerY" id="v7G-lF-uzG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WNF-KD-h4r"/>
+                    <connections>
+                        <outlet property="displayTextLabel" destination="9q6-Qr-Poi" id="fkZ-8a-vDl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIM-iy-dte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,8 +267,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="brZ-tB-TBb"/>
-        <segue reference="Pgg-GV-cS6"/>
+        <segue reference="Zc9-01-7sb"/>
+        <segue reference="6rc-Zs-dn7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="1080" height="1920"/>

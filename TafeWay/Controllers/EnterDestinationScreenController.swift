@@ -14,12 +14,14 @@ class EnterDestinationScreenController: UIViewController, UIPickerViewDelegate, 
     // Prepare segue to pass data to ShowingDirectionViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // Get a reference to the view controller data is being passed to
-        let ShowingDirectionViewController = segue.destination as! ShowingDirectionViewController
-        
-        // Set a variable in the view controller with the String to pass
-        ShowingDirectionViewController.area = areaPassed!
-        ShowingDirectionViewController.entrance = entrancePassed!
+        if segue.identifier == "playerSegue"{
+            // Get a reference to the view controller data is being passed to
+            let ShowingDirectionViewController = segue.destination as! ShowingDirectionViewController
+            
+            // Set a variable in the view controller with the String to pass
+            ShowingDirectionViewController.area = areaPassed!
+            ShowingDirectionViewController.entrance = entrancePassed!
+        }
     }
     // Variable that will be passed to the view controller to display the correct video
     var areaPassed: String?
